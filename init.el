@@ -12,6 +12,7 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
+  "t" 'helm-cmd-t
   "s" 'save-buffer)
 
 ;; Set font
