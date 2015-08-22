@@ -31,6 +31,12 @@
 ;; Use Helm for M-x
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+;; Load Sublimity
+(require 'sublimity)
+(require 'sublimity-scroll)
+;; (require 'sublimity-map)
+;; (require 'sublimity-attractive)
+
 ;; Set color theme
 (load-theme 'dark-krystal t)
 
