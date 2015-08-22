@@ -1,0 +1,7 @@
+eshell/history
+eshell/lastdir
+url/cache/*
+# Ignore backup files
+*~
+# Ignore compiled Elisp files
+*.elc

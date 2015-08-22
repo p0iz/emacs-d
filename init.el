@@ -1,0 +1,34 @@
+;; This is my emacs initialization script
+
+;; Initialize package manager
+(require 'package)
+(push '("marmalade" . "http://marmalade-repo.org/packages/") package-archives)
+(push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
+(package-initialize)
+
+;; Intitialize evil mode
+(require 'evil)
+(evil-mode 1)
+
+;; Set font
+(custom-set-faces
+ '(default ((t (:family "Source Code Pro Medium" :foundry "outline" :slant normal :weight normal :height 113 :width normal)))))
+
+;; Set options
+(custom-set-variables
+ '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+    ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
+ '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(scroll-bar-mode nil)
+ '(tool-bar-mode nil))
+
+;; Use Helm for M-x
+(global-set-key (kbd "M-x") 'helm-M-x)
+
+;; Set color theme
+(load-theme 'dark-krystal t)
+
+;; Disable audio bell
+(setq visible-bell t)
