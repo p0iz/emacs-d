@@ -6,9 +6,13 @@
 (push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
 (package-initialize)
 
-;; Intitialize evil mode
+;; Set evil modes
 (require 'evil)
 (evil-mode 1)
+(global-evil-leader-mode)
+(evil-leader/set-leader "<SPC>")
+(evil-leader/set-key
+  "s" 'save-buffer)
 
 ;; Set font
 (custom-set-faces
