@@ -25,6 +25,7 @@
    (quote
     ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 
