@@ -9,6 +9,7 @@
 ;; Set evil modes
 (require 'evil)
 (evil-mode 1)
+(global-evil-jumper-mode)
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
