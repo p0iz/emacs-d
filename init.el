@@ -29,6 +29,7 @@
  '(menu-bar-mode nil)
  '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
+(savehist-mode 1)
 
 ;; Use Helm for M-x
 (global-set-key (kbd "M-x") 'helm-M-x)
