@@ -13,6 +13,7 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
+  "h" 'ff-find-other-file
   "t" 'helm-cmd-t
   "s" 'save-buffer)
 
