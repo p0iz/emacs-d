@@ -45,4 +45,5 @@
 (load-theme 'gruvbox t)
 
 ;; Disable audio bell
-(setq visible-bell t)
+(setq visible-bell nil)
+
