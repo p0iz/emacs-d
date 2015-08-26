@@ -44,6 +44,7 @@
 (require 'sublimity-scroll)
 ;; (require 'sublimity-map)
 ;; (require 'sublimity-attractive)
+(sublimity-mode)
 
 ;; Set color theme
 (load-theme 'gruvbox t)
