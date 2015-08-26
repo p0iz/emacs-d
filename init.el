@@ -17,6 +17,10 @@
   "t" 'helm-cmd-t
   "s" 'save-buffer)
 
+;; Same frame speedbar
+(require 'sr-speedbar)
+(global-set-key (kbd "<f3>") 'sr-speedbar-toggle)
+
 ;; Set font
 (custom-set-faces
  '(default ((t (:family "Source Code Pro Medium" :foundry "outline" :slant normal :weight normal :height 113 :width normal)))))
