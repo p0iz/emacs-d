@@ -42,7 +42,7 @@
 ;; (require 'sublimity-attractive)
 
 ;; Set color theme
-(load-theme 'dark-krystal t)
+(load-theme 'gruvbox t)
 
 ;; Disable audio bell
 (setq visible-bell t)
