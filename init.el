@@ -21,6 +21,9 @@
 (require 'sr-speedbar)
 (global-set-key (kbd "<f3>") 'sr-speedbar-toggle)
 
+;; Compile key
+(global-set-key (kbd "<f7>") 'compile)
+
 ;; Set font
 (custom-set-faces
  '(default ((t (:family "Source Code Pro Medium" :foundry "outline" :slant normal :weight normal :height 113 :width normal)))))
