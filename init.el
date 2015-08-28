@@ -64,3 +64,9 @@
 ;; Disable audio bell
 (setq visible-bell nil)
 
+;; Never indent with tabs!
+(setq indent-tabs-mode nil)
+(put 'narrow-to-region 'disabled nil)
+
+;; Do not make backup files
+(setq make-backup-files nil)
