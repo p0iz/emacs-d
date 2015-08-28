@@ -51,6 +51,12 @@
 ;; Use Helm for M-x
 (global-set-key (kbd "M-x") 'helm-M-x)
 
+;; Add ggtags hook
+(add-hook 'c-mode-common-hook
+	  (lambda ()
+	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+	      (ggtags-mode 1))))
+
 ;; Load Sublimity
 (require 'sublimity)
 (require 'sublimity-scroll)
