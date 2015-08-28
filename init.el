@@ -41,6 +41,10 @@
  '(column-number-mode t)
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(scroll-bar-mode nil)
+ '(speedbar-sort-tags t)
+ '(speedbar-tag-hierarchy-method
+   (quote
+    (speedbar-prefix-group-tag-hierarchy speedbar-trim-words-tag-hierarchy speedbar-sort-tag-hierarchy)))
  '(tool-bar-mode nil))
 (savehist-mode 1)
 
