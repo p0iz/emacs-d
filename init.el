@@ -47,8 +47,9 @@
  '(speedbar-sort-tags t)
  '(speedbar-tag-hierarchy-method
    (quote
-    (speedbar-prefix-group-tag-hierarchy speedbar-trim-words-tag-hierarchy speedbar-sort-tag-hierarchy)))
- '(tool-bar-mode nil))
+    (speedbar-prefix-group-tag-hierarchy speedbar-trim-words-tag-hierarchy)))
+ '(sr-speedbar-right-side t)
+ '(tool-bar-mode nil)
  '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (savehist-mode 1)
 
