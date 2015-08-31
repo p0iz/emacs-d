@@ -39,6 +39,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(ido-mode (quote both) nil (ido))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(scroll-bar-mode nil)
  '(speedbar-sort-tags t)
@@ -46,6 +47,7 @@
    (quote
     (speedbar-prefix-group-tag-hierarchy speedbar-trim-words-tag-hierarchy speedbar-sort-tag-hierarchy)))
  '(tool-bar-mode nil))
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (savehist-mode 1)
 
 ;; Use Helm for M-x
