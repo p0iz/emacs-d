@@ -42,6 +42,8 @@
  '(ido-mode (quote both) nil (ido))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(scroll-bar-mode nil)
+ '(semantic-mode t)
+ '(semantic-sb-button-format-tag-function (quote semantic-format-tag-prototype))
  '(speedbar-sort-tags t)
  '(speedbar-tag-hierarchy-method
    (quote
