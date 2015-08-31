@@ -15,7 +15,10 @@
 (evil-leader/set-key
   "h" 'ff-find-other-file
   "t" 'helm-cmd-t
-  "s" 'save-buffer)
+  "s" 'save-buffer
+  "f n" 'make-frame
+  "f d" 'delete-frame
+  "f o" 'other-frame)
 
 ;; Same frame speedbar
 (require 'sr-speedbar)
