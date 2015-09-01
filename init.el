@@ -18,7 +18,8 @@
   "s" 'save-buffer
   "f n" 'make-frame
   "f d" 'delete-frame
-  "f o" 'other-frame)
+  "f o" 'other-frame
+  "m t" 'multi-term)
 
 ;; Same frame speedbar
 (require 'sr-speedbar)
@@ -84,3 +85,10 @@
 
 ;; Do not make backup files
 (setq make-backup-files nil)
+
+;; Configure multi-term
+(setq multi-term-program "/bin/zsh")
+(add-hook 'term-mode-hook
+          (lambda ()
+            (setq term-buffer-maximum-size 10000)
+	    (setq show-trailing-whitespace nil)))
