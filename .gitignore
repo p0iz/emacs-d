@@ -6,3 +6,6 @@ url/cache/*
 *~
 # Ignore compiled Elisp files
 *.elc
+.tutor/*
+ido.last
+semanticdb/*
