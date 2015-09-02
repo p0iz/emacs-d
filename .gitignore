@@ -9,3 +9,5 @@ url/cache/*
 .tutor/*
 ido.last
 semanticdb/*
+# Ignore downloaded archive index files
+elpa/archives/*
