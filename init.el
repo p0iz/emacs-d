@@ -19,6 +19,7 @@
   "f n" 'make-frame
   "f d" 'delete-frame
   "f o" 'other-frame
+  "m s" 'magit-status
   "m t" 'multi-term)
 
 ;; Same frame speedbar
