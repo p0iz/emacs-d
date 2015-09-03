@@ -49,13 +49,10 @@
  '(scroll-bar-mode nil)
  '(semantic-mode t)
  '(semantic-sb-button-format-tag-function (quote semantic-format-tag-prototype))
- '(speedbar-sort-tags t)
- '(speedbar-tag-hierarchy-method
-   (quote
-    (speedbar-prefix-group-tag-hierarchy speedbar-trim-words-tag-hierarchy)))
  '(sr-speedbar-right-side t)
  '(tool-bar-mode nil)
- '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify))
+ '(global-hl-line-mode t))
 (savehist-mode 1)
 
 ;; Use Helm for M-x
