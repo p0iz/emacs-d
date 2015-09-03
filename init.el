@@ -75,7 +75,7 @@
 (sublimity-mode)
 
 ;; Set color theme
-(load-theme 'gruvbox t)
+(load-theme 'oldlace t)
 
 ;; Disable audio bell
 (setq visible-bell nil)
