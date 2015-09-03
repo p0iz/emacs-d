@@ -87,6 +87,11 @@
 ;; Do not make backup files
 (setq make-backup-files nil)
 
+;; Configure scrolling to be more fluid
+(setq
+ scroll-margin 10 ;; 10 lines margin from edges
+ scroll-conservatively 100000) ;; Preserve a lot of lines to scroll only one line at a time
+
 ;; Configure multi-term
 (require 'multi-term)
 (setq multi-term-program "/bin/zsh")
