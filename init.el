@@ -88,8 +88,10 @@
 (setq make-backup-files nil)
 
 ;; Configure multi-term
+(require 'multi-term)
 (setq multi-term-program "/bin/zsh")
 (add-hook 'term-mode-hook
           (lambda ()
+	    (sublimity-mode nil)
             (setq term-buffer-maximum-size 10000)
 	    (setq show-trailing-whitespace nil)))
