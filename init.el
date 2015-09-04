@@ -64,13 +64,6 @@
 	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
 	      (ggtags-mode 1))))
 
-;; Load Sublimity
-(require 'sublimity)
-(require 'sublimity-scroll)
-;; (require 'sublimity-map)
-;; (require 'sublimity-attractive)
-(sublimity-mode)
-
 ;; Set color theme
 (load-theme 'oldlace t)
 
@@ -94,6 +87,5 @@
 (setq multi-term-program "/bin/zsh")
 (add-hook 'term-mode-hook
           (lambda ()
-	    (sublimity-mode nil)
             (setq term-buffer-maximum-size 10000)
 	    (setq show-trailing-whitespace nil)))
