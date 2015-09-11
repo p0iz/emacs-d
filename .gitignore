@@ -11,3 +11,5 @@ ido.last
 semanticdb/*
 # Ignore downloaded archive index files
 elpa/archives/*
+# Ignore auto-complete history
+ac-comphist.dat

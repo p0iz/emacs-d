@@ -13,12 +13,15 @@
 (global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
-  "h" 'ff-find-other-file
+  "h" '(lambda ()
+	 (interactive)
+	 (ff-find-other-file nil t))
   "t" 'helm-cmd-t
   "s" 'save-buffer
   "f n" 'make-frame
   "f d" 'delete-frame
   "f o" 'other-frame
+  "f f" 'focus-mode
   "m s" 'magit-status
   "m t" 'multi-term)
 
@@ -44,6 +47,10 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(column-number-mode t)
+ '(custom-safe-themes
+   (quote
+    ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
+ '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(scroll-bar-mode nil)
@@ -51,8 +58,7 @@
  '(semantic-sb-button-format-tag-function (quote semantic-format-tag-prototype))
  '(sr-speedbar-right-side t)
  '(tool-bar-mode nil)
- '(uniquify-buffer-name-style (quote post-forward) nil (uniquify))
- '(global-hl-line-mode t))
+ '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (savehist-mode 1)
 
 ;; Use Helm for M-x
@@ -62,10 +68,11 @@
 (add-hook 'c-mode-common-hook
 	  (lambda ()
 	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-	      (ggtags-mode 1))))
+	      (ggtags-mode 1)
+	      (auto-complete-mode))))
 
-;; Set color theme
-(load-theme 'oldlace t)
+;; set color theme
+(load-theme 'gruvbox t)
 
 ;; Disable audio bell
 (setq visible-bell nil)
@@ -87,5 +94,7 @@
 (setq multi-term-program "/bin/zsh")
 (add-hook 'term-mode-hook
           (lambda ()
+	    (setq scroll-margin 0)
+	    (setq global-hl-line-mode nil)
             (setq term-buffer-maximum-size 10000)
 	    (setq show-trailing-whitespace nil)))
