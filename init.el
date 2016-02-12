@@ -59,6 +59,7 @@
  '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(menu-bar-mode nil)
  '(paradox-github-token t)
  '(scroll-bar-mode nil)
  '(semantic-mode t)
