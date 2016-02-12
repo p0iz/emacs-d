@@ -5,6 +5,12 @@
 (push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
 (package-initialize)
 
+;; Set hardcore mode
+(setq too-hardcore-backspace t)
+(setq too-hardcore-return t)
+(require 'hardcore-mode)
+(global-hardcore-mode)
+
 ;; Set evil modes
 (require 'evil)
 (evil-mode 1)
