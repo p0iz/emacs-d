@@ -13,3 +13,4 @@ semanticdb/*
 elpa/archives/*
 # Ignore auto-complete history
 ac-comphist.dat
+recentf
