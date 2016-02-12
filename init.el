@@ -2,7 +2,6 @@
 
 ;; Initialize package manager
 (require 'package)
-(push '("marmalade" . "http://marmalade-repo.org/packages/") package-archives)
 (push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
 (package-initialize)
 
@@ -53,6 +52,7 @@
  '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
  '(initial-frame-alist (quote ((fullscreen . maximized))))
+ '(paradox-github-token t)
  '(scroll-bar-mode nil)
  '(semantic-mode t)
  '(semantic-sb-button-format-tag-function (quote semantic-format-tag-prototype))

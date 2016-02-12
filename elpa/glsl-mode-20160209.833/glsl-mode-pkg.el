@@ -1,0 +1,1 @@
+(define-package "glsl-mode" "20160209.833" "major mode for Open GLSL shader files" 'nil :stars '(#("27" 0 2 (font-lock-face paradox-star-face))) :url "http://artis.inrialpes.fr/~Xavier.Decoret/resources/glsl-mode/" :keywords '("languages"))
