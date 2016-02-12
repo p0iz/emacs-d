@@ -12,10 +12,11 @@
 (global-hardcore-mode)
 
 ;; Set evil modes
+(require 'evil-leader)
+(global-evil-leader-mode)
 (require 'evil)
 (evil-mode 1)
 (global-evil-jumper-mode)
-(global-evil-leader-mode)
 (evil-leader/set-leader "<SPC>")
 (evil-leader/set-key
   "h" '(lambda ()
