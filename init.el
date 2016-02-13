@@ -28,8 +28,7 @@
   "f d" 'delete-frame
   "f o" 'other-frame
   "f f" 'focus-mode
-  "m s" 'magit-status
-  "m t" 'multi-term)
+  "m s" 'magit-status)
 
 ;; Same frame speedbar
 (require 'sr-speedbar)
@@ -96,13 +95,3 @@
 (setq
  scroll-margin 10 ;; 10 lines margin from edges
  scroll-conservatively 100000) ;; Preserve a lot of lines to scroll only one line at a time
-
-;; Configure multi-term
-(require 'multi-term)
-(setq multi-term-program "/bin/zsh")
-(add-hook 'term-mode-hook
-          (lambda ()
-	    (setq scroll-margin 0)
-	    (setq global-hl-line-mode nil)
-            (setq term-buffer-maximum-size 10000)
-	    (setq show-trailing-whitespace nil)))
