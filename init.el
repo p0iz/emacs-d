@@ -1,5 +1,8 @@
 ;; This is my emacs initialization script
 
+;; Start Emacs server
+(server-start)
+
 ;; Initialize package manager
 (require 'package)
 (push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
