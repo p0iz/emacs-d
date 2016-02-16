@@ -8,12 +8,6 @@
 (push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
 (package-initialize)
 
-;; Set hardcore mode
-(setq too-hardcore-backspace t)
-(setq too-hardcore-return t)
-(require 'hardcore-mode)
-(global-hardcore-mode)
-
 ;; Set evil modes
 (require 'evil-leader)
 (global-evil-leader-mode)
@@ -37,16 +31,13 @@
 (require 'sr-speedbar)
 (global-set-key (kbd "<f3>") 'sr-speedbar-toggle)
 
-;; Compile key
-(global-set-key (kbd "<f7>") 'compile)
-
 ;; Set font
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Source Code Pro" :foundry "adobe" :slant normal :weight semi-bold :height 98 :width normal)))))
+ '(default ((t (:family "Fantasque Sans Mono" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
 
 ;; Set options
 (custom-set-variables
@@ -81,15 +72,20 @@
 	      (ggtags-mode 1)
 	      (auto-complete-mode))))
 
-;; set color theme
-(load-theme 'gruvbox t)
+;; Set color theme (handle emacsclients when running as daemon)
+(set 'theme 'gruvbox)
+(if (daemonp)
+    (add-hook 'after-make-frame-functions
+        (lambda (frame)
+            (select-frame frame)
+            (load-theme theme t)))
+    (load-theme theme t))
 
 ;; Disable audio bell
 (setq visible-bell nil)
 
 ;; Never indent with tabs!
 (setq indent-tabs-mode nil)
-(put 'narrow-to-region 'disabled nil)
 
 ;; Do not make backup files
 (setq make-backup-files nil)
