@@ -62,8 +62,9 @@
  '(uniquify-buffer-name-style (quote post-forward) nil (uniquify)))
 (savehist-mode 1)
 
-;; Use Helm for M-x
+;; Helm
 (global-set-key (kbd "M-x") 'helm-M-x)
+(global-set-key (kbd "C-x C-f") 'helm-find-files)
 
 ;; Add ggtags hook
 (add-hook 'c-mode-common-hook
