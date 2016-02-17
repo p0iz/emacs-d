@@ -51,7 +51,6 @@
     ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
  '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
- '(initial-frame-alist (quote ((fullscreen . maximized))))
  '(menu-bar-mode nil)
  '(paradox-github-token t)
  '(scroll-bar-mode nil)
