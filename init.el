@@ -101,5 +101,5 @@
 
 ;; Configure scrolling to be more fluid
 (setq
- scroll-margin 10 ;; 10 lines margin from edges
+ scroll-margin 20 ;; 20 lines margin from edges
  scroll-conservatively 100000) ;; Preserve a lot of lines to scroll only one line at a time
