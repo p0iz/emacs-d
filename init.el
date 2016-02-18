@@ -83,6 +83,7 @@
 
 ;; Disable audio bell
 (setq visible-bell nil)
+(setq ring-bell-function 'ignore)
 
 ;; Never indent with tabs!
 (setq indent-tabs-mode nil)
