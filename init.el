@@ -31,6 +31,10 @@
 (require 'sr-speedbar)
 (global-set-key (kbd "<f3>") 'sr-speedbar-toggle)
 
+;; Jump to start/end of line in Evil normal state
+(define-key evil-normal-state-map "H" 'beginning-of-line)
+(define-key evil-normal-state-map "L" 'end-of-line)
+
 ;; Set font
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
