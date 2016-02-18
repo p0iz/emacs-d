@@ -77,7 +77,7 @@
 	      (auto-complete-mode))))
 
 ;; Set color theme (handle emacsclients when running as daemon)
-(set 'theme 'gruvbox)
+(set 'theme 'spacegray)
 (if (daemonp)
     (add-hook 'after-make-frame-functions
         (lambda (frame)
