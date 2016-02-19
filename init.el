@@ -36,8 +36,10 @@
 (define-key evil-normal-state-map "L" 'end-of-line)
 
 ;; Use home row keys to navigate Helm menu
-(define-key helm-map (kbd "M-j") 'helm-next-line)
-(define-key helm-map (kbd "M-k") 'helm-previous-line)
+(with-eval-after-load 'helm
+    (progn
+      (define-key helm-map (kbd "M-j") 'helm-next-line)
+      (define-key helm-map (kbd "M-k") 'helm-previous-line)))
 
 ;; Set font
 (custom-set-faces
