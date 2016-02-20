@@ -1,5 +1,8 @@
 ;; This is my emacs initialization script
 
+;; I don't need a welcome when I am already home
+(setq inhibit-startup-message t)
+
 ;; Start Emacs server
 (server-start)
 
