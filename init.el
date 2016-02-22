@@ -23,8 +23,9 @@
 	 (interactive)
 	 (ff-find-other-file nil t))
   "t" 'helm-cmd-t
+  "b" 'helm-buffers-list
   "s" 'save-buffer
-  "f n" 'make-frame
+  "f c" 'make-frame
   "f d" 'delete-frame
   "f o" 'other-frame
   "f f" 'focus-mode
@@ -37,6 +38,8 @@
 ;; Jump to start/end of line in Evil normal state
 (define-key evil-normal-state-map "H" 'beginning-of-line)
 (define-key evil-normal-state-map "L" 'end-of-line)
+(define-key evil-visual-state-map "H" 'beginning-of-line)
+(define-key evil-visual-state-map "L" 'end-of-line)
 
 ;; Use home row keys to navigate Helm menu
 (with-eval-after-load 'helm
