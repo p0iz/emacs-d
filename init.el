@@ -64,6 +64,7 @@
     ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
  '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
+ '(indent-tabs-mode nil)
  '(menu-bar-mode nil)
  '(paradox-github-token t)
  '(scroll-bar-mode nil)
@@ -97,9 +98,6 @@
 ;; Disable audio bell
 (setq visible-bell nil)
 (setq ring-bell-function 'ignore)
-
-;; Never indent with tabs!
-(setq indent-tabs-mode nil)
 
 ;; Do not make backup files
 (setq make-backup-files nil)
