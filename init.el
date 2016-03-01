@@ -106,12 +106,14 @@
       (define-key helm-map (kbd "M-j") 'helm-next-line)
       (define-key helm-map (kbd "M-k") 'helm-previous-line)))
 
-;; Add ggtags hook
+;; Add cc-mode hooks
+(require 'column-marker)
 (add-hook 'c-mode-common-hook
 	  (lambda ()
 	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
 	      (ggtags-mode 1)
-	      (auto-complete-mode))))
+	      (auto-complete-mode))
+            (column-marker-1 100)))
 
 ;; Do not make backup files
 (setq make-backup-files nil)
