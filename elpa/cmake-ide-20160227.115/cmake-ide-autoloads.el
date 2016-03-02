@@ -3,7 +3,8 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "cmake-ide" "cmake-ide.el" (22229 58339 0 0))
+;;;### (autoloads nil "cmake-ide" "cmake-ide.el" (22230 35230 154526
+;;;;;;  772000))
 ;;; Generated autoloads from cmake-ide.el
 
 (autoload 'cmake-ide-setup "cmake-ide" "\
@@ -33,6 +34,11 @@ Compile the project.
 Start the rdm (rtags) server.
 
 \(fn)" nil nil)
+
+;;;***
+
+;;;### (autoloads nil nil ("cmake-ide-pkg.el") (22230 35230 159635
+;;;;;;  403000))
 
 ;;;***
 

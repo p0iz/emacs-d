@@ -3,7 +3,7 @@
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil "evil" "evil.el" (22229 58337 0 0))
+;;;### (autoloads nil "evil" "evil.el" (22230 35228 174481 363000))
 ;;; Generated autoloads from evil.el
 
 (defvar evil-mode nil "\
@@ -33,7 +33,7 @@ See `evil-local-mode' for more information on Evil-Local mode.
 ;;;;;;  "evil-common.el" "evil-core.el" "evil-digraphs.el" "evil-ex.el"
 ;;;;;;  "evil-integration.el" "evil-jumps.el" "evil-macros.el" "evil-maps.el"
 ;;;;;;  "evil-pkg.el" "evil-repeat.el" "evil-search.el" "evil-states.el"
-;;;;;;  "evil-types.el" "evil-vars.el") (22229 58338 33272 0))
+;;;;;;  "evil-types.el" "evil-vars.el") (22230 35228 181457 99000))
 
 ;;;***
 
