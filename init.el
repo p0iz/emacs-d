@@ -67,17 +67,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(c-basic-offset 2)
- '(c-default-style
-   (quote
-    ((java-mode . "java")
-     (awk-mode . "awk")
-     (other . "k&r"))))
  '(column-number-mode t)
  '(custom-safe-themes
    (quote
     ("5d1434865473463d79ee0523c1ae60ecb731ab8d134a2e6f25c17a2b497dd459" default)))
- '(doc-view-continuous t)
+ '(ecb-layout-name "right-methods")
+ '(ecb-minor-mode-text "")
+ '(ecb-options-version "2.40")
+ '(ecb-tip-of-the-day nil)
+ '(ecb-windows-width 0.18)
  '(global-hl-line-mode t)
  '(ido-mode (quote both) nil (ido))
  '(indent-tabs-mode nil)
