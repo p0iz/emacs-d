@@ -118,3 +118,4 @@
 ;; Do not make backup files
 (setq make-backup-files nil)
 
+(put 'narrow-to-region 'disabled nil)
