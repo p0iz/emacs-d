@@ -30,9 +30,9 @@
 (require 'evil)
 (evil-mode)
 
-;; Same frame speedbar
-(require 'sr-speedbar)
-(global-set-key (kbd "<f3>") 'sr-speedbar-toggle)
+;; Some shortcuts adapted from QtCreator
+(global-set-key (kbd "<f2>") 'ggtags-find-definition)
+(global-set-key (kbd "<f3>") 'ggtags-find-reference)
 
 ;; Jump to start/end of line in Evil normal state
 (define-key evil-normal-state-map "H" 'beginning-of-line)
