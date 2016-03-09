@@ -31,7 +31,7 @@
 (evil-mode)
 
 ;; Some shortcuts adapted from QtCreator
-(global-set-key (kbd "<f2>") 'ggtags-find-definition)
+(global-set-key (kbd "<f2>") 'semantic-ia-fast-jump)
 (global-set-key (kbd "<f3>") 'ggtags-find-reference)
 
 ;; Jump to start/end of line in Evil normal state
