@@ -6,10 +6,8 @@
 ;; Start Emacs server
 (server-start)
 
-;; Initialize package manager
-(require 'package)
-(push '("melpa" . "http://melpa.milkbox.net/packages/") package-archives)
-(package-initialize)
+;; Load packages
+(load-file (expand-file-name "packages.el" user-emacs-directory))
 
 ;; Set evil modes
 (require 'evil-leader)
