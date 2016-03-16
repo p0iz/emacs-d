@@ -9,8 +9,8 @@ url/cache/*
 .tutor/*
 ido.last
 semanticdb/*
-# Ignore downloaded archive index files
-elpa/archives/*
+# Ignore ELPA files (they will be downloaded on first run)
+elpa/*
 # Ignore auto-complete history
 ac-comphist.dat
 recentf

@@ -1,1 +1,0 @@
-(define-package "gruvbox-theme" "20151227.113" "A retro-groove colour theme for Emacs" 'nil :stars '(#("34" 0 2 (font-lock-face paradox-star-face))) :url "http://github.com/Greduan/emacs-theme-gruvbox")
