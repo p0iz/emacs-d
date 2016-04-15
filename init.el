@@ -170,3 +170,7 @@
 (setq make-backup-files nil)
 
 (put 'narrow-to-region 'disabled nil)
+
+;; Setup cmake-ide hooks
+(require 'cl-lib)
+(cmake-ide-setup)
