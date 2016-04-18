@@ -174,5 +174,6 @@
 
 ;; Setup cmake-ide hooks
 (require 'cl)
+(require 'subr-x)
 (require 'cmake-ide)
 (cmake-ide-setup)
