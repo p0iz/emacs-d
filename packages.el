@@ -31,8 +31,6 @@
         'dash
         'dtrt-indent
         'ecb
-        'evil
-        'evil-leader
         'focus
         'ggtags
         'glsl-mode

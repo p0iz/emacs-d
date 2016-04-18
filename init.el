@@ -9,34 +9,9 @@
 ;; Load packages
 (load-file (expand-file-name "packages.el" user-emacs-directory))
 
-;; Set evil modes
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader "<SPC>")
-(evil-leader/set-key
-  "h" '(lambda ()
-	 (interactive)
-	 (ff-find-other-file nil t))
-  "t" 'helm-cmd-t
-  "b" 'helm-buffers-list
-  "s" 'save-buffer
-  "f c" 'make-frame
-  "f d" 'delete-frame
-  "f o" 'other-frame
-  "f f" 'focus-mode
-  "m s" 'magit-status)
-(require 'evil)
-(evil-mode)
-
 ;; Some shortcuts adapted from QtCreator
 (global-set-key (kbd "<f2>") 'semantic-ia-fast-jump)
 (global-set-key (kbd "<f3>") 'ggtags-find-reference)
-
-;; Jump to start/end of line in Evil normal state
-(define-key evil-normal-state-map "H" 'beginning-of-line)
-(define-key evil-normal-state-map "L" 'end-of-line)
-(define-key evil-visual-state-map "H" 'beginning-of-line)
-(define-key evil-visual-state-map "L" 'end-of-line)
 
 ;; Set font
 (custom-set-faces
@@ -151,12 +126,6 @@
 ;; Helm
 (global-set-key (kbd "M-x") 'helm-M-x)
 (global-set-key (kbd "C-x C-f") 'helm-find-files)
-
-;; Use home row keys to navigate Helm menu
-(with-eval-after-load 'helm
-    (progn
-      (define-key helm-map (kbd "M-j") 'helm-next-line)
-      (define-key helm-map (kbd "M-k") 'helm-previous-line)))
 
 ;; Add cc-mode hooks
 (require 'column-marker)
