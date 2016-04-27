@@ -139,8 +139,7 @@
             (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
               (ggtags-mode 1)
               (auto-complete-mode)
-              (local-set-key (kbd "C-c C-o") 'ff-find-other-file))
-            (column-marker-1 100)))
+              (local-set-key (kbd "C-c C-o") 'ff-find-other-file))))
 
 ;; Do not make backup files
 (setq make-backup-files nil)
