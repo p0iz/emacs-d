@@ -136,9 +136,10 @@
 (require 'column-marker)
 (add-hook 'c-mode-common-hook
 	  (lambda ()
-	    (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
-	      (ggtags-mode 1)
-	      (auto-complete-mode))
+            (when (derived-mode-p 'c-mode 'c++-mode 'java-mode 'asm-mode)
+              (ggtags-mode 1)
+              (auto-complete-mode)
+              (local-set-key (kbd "C-c C-o") 'ff-find-other-file))
             (column-marker-1 100)))
 
 ;; Do not make backup files
