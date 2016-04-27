@@ -109,7 +109,10 @@
  '(indent-tabs-mode nil)
  '(menu-bar-mode nil)
  '(paradox-github-token t)
- '(safe-local-variable-values (quote ((cmake-ide-build-dir . "build/debug"))))
+ '(safe-local-variable-values
+   (quote
+    ((cmake-ide-build-dir . build/debug)
+     (cmake-ide-build-dir . "build/debug"))))
  '(scroll-bar-mode nil)
  '(semantic-mode t)
  '(semantic-sb-button-format-tag-function (quote semantic-format-tag-prototype))
