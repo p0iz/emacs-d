@@ -143,6 +143,9 @@
 
 (put 'narrow-to-region 'disabled nil)
 
+;; Show matching parentheses
+(show-paren-mode)
+
 ;; Setup cmake-ide hooks
 (require 'cl)
 (require 'subr-x)
