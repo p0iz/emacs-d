@@ -13,6 +13,7 @@
     (("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages (quote (magit)))
+ '(savehist-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -20,3 +21,6 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
+
+;; Allow y/n answers
+(fset 'yes-or-no-p 'y-or-n-p)
