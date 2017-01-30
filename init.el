@@ -24,6 +24,8 @@
  '(package-selected-packages (quote (multiple-cursors csharp-mode magit)))
  '(savehist-mode t)
  '(tool-bar-mode nil))
+ ;; Make sure we use the right executable in Windows
+ (if (eq system-type 'windows-nt) '(inferior-octave-program  "octave-cli"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
