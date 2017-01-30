@@ -2,3 +2,4 @@ elpa/*
 server/*
 auto-save-list/*
 history
+.mc-lists.el
