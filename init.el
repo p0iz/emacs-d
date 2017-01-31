@@ -19,21 +19,20 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(global-auto-revert-mode t)
+ '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
+ '(ivy-mode t)
+ '(ivy-use-virtual-buffers t)
  '(make-backup-files nil)
+ '(menu-bar-mode nil)
  '(package-archives
    (quote
     (("melpa" . "http://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
- '(package-selected-packages
-   (quote
-    (counsel try multiple-cursors csharp-mode magit)))
+ '(package-selected-packages (quote (counsel try multiple-cursors csharp-mode magit)))
  '(savehist-mode t)
- '(tool-bar-mode nil)
- '(menu-bar-mode nil)
- ;; Make sure we use the right executable in Windows
- (if (eq system-type 'windows-nt) '(inferior-octave-program  "octave-cli"))
- )
+ '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
