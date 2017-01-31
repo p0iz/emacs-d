@@ -10,6 +10,10 @@
 (require 'visual)
 (require 'key-bindings)
 
+;; Allow y/n answers
+(fset 'yes-or-no-p 'y-or-n-p)
+
+;; Customize
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -33,5 +37,3 @@
  ;; If there is more than one, they won't work right.
  )
 
-;; Allow y/n answers
-(fset 'yes-or-no-p 'y-or-n-p)
