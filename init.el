@@ -8,6 +8,7 @@
       (expand-file-name "settings" user-emacs-directory))
 (add-to-list 'load-path settings-dir)
 (require 'visual)
+(require 'behavior)
 (require 'key-bindings)
 
 ;; Allow y/n answers
@@ -36,7 +37,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
+    (evil base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(savehist-mode t)
