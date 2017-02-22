@@ -37,6 +37,7 @@
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(savehist-mode t)
+ '(scroll-bar-mode nil)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
