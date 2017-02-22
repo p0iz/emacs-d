@@ -49,3 +49,8 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Install selected oackages on new installations
+(unless package-archive-contents
+  (progn (package-refresh-packages)
+	 (package-install-selected-packages)))
+
