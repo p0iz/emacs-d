@@ -1,18 +1,11 @@
+;; Emacs configuration
+;;
+;; This file contains only customize, server startup and package setup code.
+;; Anything else is split into separate files contained in 'settings' dir.
 
 (package-initialize)
 
 (server-start)
-
-;; Separate settings into modules
-(setq settings-dir
-      (expand-file-name "settings" user-emacs-directory))
-(add-to-list 'load-path settings-dir)
-(require 'visual)
-(require 'behavior)
-(require 'key-bindings)
-
-;; Allow y/n answers
-(fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Customize
 (custom-set-variables
@@ -24,6 +17,9 @@
    [default default default italic underline success warning error])
  '(auto-save-default nil)
  '(custom-enabled-themes (quote (base16-monokai)))
+ '(custom-safe-themes
+   (quote
+    ("c968804189e0fc963c641f5c9ad64bca431d41af2fb7e1d01a2a6666376f819c" default)))
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
@@ -54,3 +50,10 @@
   (progn (package-refresh-packages)
 	 (package-install-selected-packages)))
 
+;; Separate settings into modules
+(setq settings-dir
+      (expand-file-name "settings" user-emacs-directory))
+(add-to-list 'load-path settings-dir)
+(require 'visual)
+(require 'behavior)
+(require 'key-bindings)
