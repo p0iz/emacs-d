@@ -27,6 +27,8 @@
  '(ivy-use-virtual-buffers t)
  '(make-backup-files nil)
  '(menu-bar-mode nil)
+ '(neo-show-hidden-files t)
+ '(neo-window-fixed-size nil)
  '(package-archives
    (quote
     (("melpa" . "http://melpa.org/packages/")
