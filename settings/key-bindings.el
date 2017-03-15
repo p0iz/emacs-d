@@ -2,6 +2,7 @@
 
 ;; Ivy
 (global-set-key (kbd "C-x C-b") 'ivy-switch-buffer)
+(global-set-key (kbd "C-s") 'swiper)
 
 ;; Evil
 (define-key evil-normal-state-map "H" 'move-beginning-of-line)
