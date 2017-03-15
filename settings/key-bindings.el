@@ -17,4 +17,9 @@
 (evil-define-key 'normal neotree-mode-map (kbd "e") 'neotree-change-root)
 (evil-define-key 'normal neotree-mode-map (kbd "u") 'neotree-select-up-node)
 
+;; Frames
+(global-set-key (kbd "C-c f o") 'other-frame)
+(global-set-key (kbd "C-c f c") 'delete-frame)
+(global-set-key (kbd "C-c f n") 'make-frame)
+
 (provide 'key-bindings)
