@@ -7,3 +7,5 @@ recentf
 semanticdb
 projectile-bookmarks.eld
 projectile.cache
+.emacs.desktop
+.emacs.desktop.lock
