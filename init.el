@@ -5,7 +5,10 @@
 
 (package-initialize)
 
-(server-start)
+;; Load server if not running
+(require 'server)
+(unless (server-running-p)
+    (server-start))
 
 ;; Customize
 (custom-set-variables
