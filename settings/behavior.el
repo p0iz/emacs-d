@@ -1,8 +1,5 @@
 ;; Settings that affect behavior
 
-;; Evil
-(evil-mode)
-
 ;; Neotree
 (require 'neotree)
 

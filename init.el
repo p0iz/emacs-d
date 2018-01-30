@@ -18,11 +18,15 @@
  ;; If there is more than one, they won't work right.
  '(ansi-color-faces-vector
    [default default default italic underline success warning error])
+ '(ansi-color-names-vector
+   ["#272822" "#f92672" "#a6e22e" "#f4bf75" "#66d9ef" "#ae81ff" "#66d9ef" "#f8f8f2"])
+ '(ansi-term-color-vector
+   [unspecified "#272822" "#f92672" "#a6e22e" "#f4bf75" "#66d9ef" "#ae81ff" "#66d9ef" "#f8f8f2"])
  '(auto-save-default nil)
- '(custom-enabled-themes (quote (base16-monokai)))
  '(custom-safe-themes
    (quote
-    ("c968804189e0fc963c641f5c9ad64bca431d41af2fb7e1d01a2a6666376f819c" default)))
+    ("d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)
+    ))
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
@@ -38,7 +42,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree evil base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
+    (blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(safe-local-variable-values (quote ((projectile-indexing-method quote alien))))
@@ -50,7 +54,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Fantasque Sans Mono")))))
+ '(default ((t (:family "Fira Code Retina")))))
 
 ;; Install selected oackages on new installations
 (unless package-archive-contents
