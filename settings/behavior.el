@@ -7,7 +7,6 @@
 
 ;; Ivy
 (require 'ivy-hydra)
-(ivy-mode t)
 (setq ivy-use-virtual-buffers t)
 
 ;; Allow y/n answers
@@ -16,6 +15,7 @@
 ;; Enable some global modes
 (global-color-identifiers-mode t)
 (modern-c++-font-lock-global-mode t)
+(ivy-mode t)
 (golden-ratio-mode t)
 (savehist-mode t)
 
