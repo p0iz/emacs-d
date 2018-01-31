@@ -9,5 +9,6 @@
 ;; Enable some global modes
 (global-color-identifiers-mode t)
 (modern-c++-font-lock-global-mode t)
+(golden-ratio-mode t)
 
 (provide 'behavior)

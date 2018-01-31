@@ -25,8 +25,7 @@
  '(auto-save-default nil)
  '(custom-safe-themes
    (quote
-    ("d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)
-    ))
+    ("d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)))
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
@@ -42,7 +41,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
+    (golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(safe-local-variable-values (quote ((projectile-indexing-method quote alien))))
