@@ -30,8 +30,6 @@
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
  '(make-backup-files nil)
- '(neo-show-hidden-files t)
- '(neo-window-fixed-size nil)
  '(package-archives
    (quote
     (("melpa" . "http://melpa.org/packages/")
