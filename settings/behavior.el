@@ -3,6 +3,9 @@
 ;; Neotree
 (require 'neotree)
 
+;; Ivy
+(require 'ivy-hydra)
+
 ;; Allow y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
