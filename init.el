@@ -29,8 +29,6 @@
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
- '(ivy-mode t)
- '(ivy-use-virtual-buffers t)
  '(make-backup-files nil)
  '(neo-show-hidden-files t)
  '(neo-window-fixed-size nil)
