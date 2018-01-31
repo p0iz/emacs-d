@@ -10,5 +10,6 @@
 (global-color-identifiers-mode t)
 (modern-c++-font-lock-global-mode t)
 (golden-ratio-mode t)
+(savehist-mode t)
 
 (provide 'behavior)

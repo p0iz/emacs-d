@@ -32,7 +32,6 @@
  '(ivy-mode t)
  '(ivy-use-virtual-buffers t)
  '(make-backup-files nil)
- '(menu-bar-mode nil)
  '(neo-show-hidden-files t)
  '(neo-window-fixed-size nil)
  '(package-archives
@@ -44,10 +43,7 @@
     (golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
- '(safe-local-variable-values (quote ((projectile-indexing-method quote alien))))
- '(savehist-mode t)
- '(scroll-bar-mode nil)
- '(tool-bar-mode nil))
+ '(safe-local-variable-values (quote ((projectile-indexing-method quote alien)))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -64,6 +60,7 @@
 (setq settings-dir
       (expand-file-name "settings" user-emacs-directory))
 (add-to-list 'load-path settings-dir)
+
 (require 'visual)
 (require 'behavior)
 (require 'key-bindings)
