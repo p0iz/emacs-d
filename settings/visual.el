@@ -3,7 +3,7 @@
 (show-paren-mode t)
 
 ;; Disable bars
-(scroll-bar-mode nil)
+(scroll-bar-mode -1)
 (tool-bar-mode nil)
 (menu-bar-mode nil)
 
