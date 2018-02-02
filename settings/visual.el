@@ -4,8 +4,8 @@
 
 ;; Disable bars
 (scroll-bar-mode -1)
-(tool-bar-mode nil)
-(menu-bar-mode nil)
+(tool-bar-mode -1)
+(menu-bar-mode -1)
 
 ;; Remember window size and open files
 (desktop-save-mode t)
