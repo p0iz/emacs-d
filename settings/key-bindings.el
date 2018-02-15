@@ -21,4 +21,8 @@
 ;; Undo
 (global-set-key (kbd "C-z") 'undo)
 
+;; Scroll wheel zoom
+(global-set-key (kbd "<C-wheel-up>") 'text-scale-increase)
+(global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
+
 (provide 'key-bindings)
