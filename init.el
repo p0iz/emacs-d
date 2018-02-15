@@ -7,8 +7,10 @@
 
 ;; Load server if not running
 (require 'server)
-(unless (server-running-p)
-    (server-start))
+(condition-case err
+    (unless (server-running-p)
+      (server-start))
+  (error (message "Error: %s" err)))
 
 ;; Customize
 (custom-set-variables
