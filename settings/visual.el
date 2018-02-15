@@ -1,16 +1,18 @@
 ;; Settings that affect appearance
+
+;; Highlights
 (global-hl-line-mode t)
 (show-paren-mode t)
 
-;; Disable bars
-(scroll-bar-mode -1)
-(tool-bar-mode -1)
+;; In graphical mode load theme, disable bars and remember window size and open files
+(unless 'display-graphic-p nil
+	(load-theme 'blackboard)
+	(scroll-bar-mode -1)
+	(tool-bar-mode -1)
+	(desktop-save-mode t))
+
+;; Disable menu bar
 (menu-bar-mode -1)
-
-;; Remember window size and open files
-(desktop-save-mode t)
-
-(load-theme 'blackboard)
 
 ;; No bells or whistles
 (setq visible-bell nil)
