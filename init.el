@@ -51,7 +51,7 @@
 
 ;; Install selected oackages on new installations
 (unless package-archive-contents
-  (progn (package-refresh-packages)
+  (progn (package-refresh-contents)
 	 (package-install-selected-packages)))
 
 ;; Separate settings into modules
