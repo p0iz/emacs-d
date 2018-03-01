@@ -26,7 +26,7 @@
 (global-set-key (kbd "<C-wheel-down>") 'text-scale-decrease)
 
 ;; Multiple-cursors
-(global-set-key (kbd "C->") 'mc/mark-next-like-this-word)
-(global-set-key (kbd "C-<") 'mc/mark-previous-like-this-word)
+(global-set-key (kbd "C->") 'mc/mark-next-like-this)
+(global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
 
 (provide 'key-bindings)
