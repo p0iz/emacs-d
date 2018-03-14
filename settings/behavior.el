@@ -19,4 +19,13 @@
 (golden-ratio-mode t)
 (savehist-mode t)
 
+;; Set indent styles
+(setq c-default-style
+      (quote
+       ((c-mode . "k&r")
+	(c++-mode . "k&r")
+	(java-mode . "java")
+	(awk-mode . "awk")
+	(other . "k&r"))))
+
 (provide 'behavior)
