@@ -10,7 +10,8 @@
     (menu-bar-mode -1)
 
     ;; No bells or whistles
-    (setq visible-bell nil)
+    (setq visible-bell nil
+	  ring-bell-function (lambda () ()))
 
     ;; In graphical mode load theme, disable bars and remember window size and open files
     (when (window-system frame)
