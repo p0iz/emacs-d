@@ -1,5 +1,5 @@
 ;; Settings that affect appearance
-(defun apply-visual (frame)
+(defun apply-visual (&optional frame)
   "Applies visual appearance properties to frame"
   (progn
     ;; Highlights
@@ -21,6 +21,8 @@
 
 ;; Apply visuals to current and future frames
 (when (daemonp)
-    (add-hook 'after-make-frame-functions 'apply-visual))
+  (add-hook 'after-make-frame-functions 'apply-visual))
+
+(apply-visual)
 
 (provide 'visual)
