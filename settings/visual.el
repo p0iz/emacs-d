@@ -9,6 +9,9 @@
     ;; Disable menu bar
     (menu-bar-mode -1)
 
+    ;; Add line numbers
+    (linum-mode t)
+
     ;; No bells or whistles
     (setq visible-bell nil
 	  ring-bell-function (lambda () ()))
