@@ -18,7 +18,8 @@
       (load-theme 'blackboard)
       (scroll-bar-mode -1)
       (tool-bar-mode -1)
-      (desktop-save-mode))))
+      (desktop-save-mode)
+      (set-fringe-style '(1 . 1)))))
 
 ;; Apply visuals to current and future frames
 (when (daemonp)
