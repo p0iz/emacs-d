@@ -38,7 +38,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ivy-hydra golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
+    (company-lua company-quickhelp company ivy-hydra golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(safe-local-variable-values (quote ((projectile-indexing-method quote alien)))))
@@ -47,7 +47,15 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Fira Code Retina")))))
+ '(default ((t (:family "Fira Code Retina"))))
+ '(company-preview ((t (:background "midnight blue" :foreground "snow"))))
+ '(company-preview-common ((t (:inherit company-preview :foreground "slate gray"))))
+ '(company-preview-search ((t (:inherit company-preview :background "midnight blue"))))
+ '(company-scrollbar-bg ((t (:background "dark slate blue"))))
+ '(company-scrollbar-fg ((t (:background "slate blue"))))
+ '(company-tooltip ((t (:background "midnight blue" :foreground "snow"))))
+ '(company-tooltip-common ((t (:foreground "gray"))))
+ '(company-tooltip-selection ((t (:background "light slate blue")))))
 
 ;; Install selected oackages on new installations
 (unless package-archive-contents

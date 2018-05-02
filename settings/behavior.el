@@ -28,4 +28,11 @@
 	(awk-mode . "awk")
 	(other . "k&r"))))
 
+;; Company
+(add-hook 'after-init-hook 'global-company-mode)
+(setq company-idle-delay 0
+      company-show-numbers t
+      company-tooltip-idle-delay 0
+      company-quickhelp-delay 0)
+
 (provide 'behavior)
