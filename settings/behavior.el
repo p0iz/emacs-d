@@ -42,5 +42,14 @@
 (eval-after-load
  'company
  '(add-to-list 'company-backends 'company-omnisharp))
+(setq omnisharp-server-executable-path "C:\\omnisharp-roslyn\\OmniSharp.exe"
+      omnisharp-expected-server-version "1.30.0")
+(add-hook 'csharp-mode-hook #'company-mode)
+
+;; Ensure that Omnisharp server process is assassinated
+(defadvice save-buffers-kill-emacs (before omnisharp-auto-stop)
+  (when (get-process "OmniServer")
+    (set-process-query-on-exit-flag (get-process "OmniServer") nil)))
+(ad-activate 'save-buffers-kill-emacs)
 
 (provide 'behavior)
