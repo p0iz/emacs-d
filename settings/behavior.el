@@ -18,6 +18,8 @@
 (ivy-mode t)
 (golden-ratio-mode t)
 (savehist-mode t)
+(setq desktop-load-locked-desktop nil)
+(add-hook 'desktop-not-loaded-hook 'desktop-save-mode-off)
 
 ;; Set indent styles
 (setq c-default-style
