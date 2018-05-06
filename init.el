@@ -38,7 +38,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (omnisharp company-lua company-quickhelp company ivy-hydra golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
+    (zeal-at-point omnisharp company-lua company-quickhelp company ivy-hydra golden-ratio blackboard-theme color-identifiers-mode modern-cpp-font-lock counsel-projectile neotree base16-theme rjsx-mode projectile counsel try multiple-cursors csharp-mode magit)))
  '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
  '(projectile-use-git-grep t)
  '(safe-local-variable-values (quote ((projectile-indexing-method quote alien)))))

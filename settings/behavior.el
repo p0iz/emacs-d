@@ -52,4 +52,8 @@
     (set-process-query-on-exit-flag (get-process "OmniServer") nil)))
 (ad-activate 'save-buffers-kill-emacs)
 
+;; Zeal docset mappings
+(require 'zeal-at-point)
+(add-to-list 'zeal-at-point-mode-alist '(csharp-mode . ("mono" "net" "unity3d")))
+
 (provide 'behavior)

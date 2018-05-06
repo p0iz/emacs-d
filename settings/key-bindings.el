@@ -32,4 +32,7 @@
 ;; Ripgrep
 (global-set-key (kbd "C-c C-r") 'counsel-rg)
 
+;; Zeal integration
+(global-set-key (kbd "C-c d") 'zeal-at-point)
+
 (provide 'key-bindings)
