@@ -42,8 +42,6 @@
 (eval-after-load
  'company
  '(add-to-list 'company-backends 'company-omnisharp))
-(setq omnisharp-server-executable-path "C:\\omnisharp-roslyn\\OmniSharp.exe"
-      omnisharp-expected-server-version "1.30.0")
 (add-hook 'csharp-mode-hook #'company-mode)
 
 ;; Ensure that Omnisharp server process is assassinated

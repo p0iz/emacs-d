@@ -27,7 +27,7 @@
  '(auto-save-default nil)
  '(custom-safe-themes
    (quote
-    ("d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)))
+    ("43b219a31db8fddfdc8fdbfdbd97e3d64c09c1c9fdd5dff83f3ffc2ddb8f0ba0" "d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)))
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
@@ -47,7 +47,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Fira Code Retina"))))
+ '(default ((t (:height 160 :family "Fira Code Retina"))))
  '(company-preview ((t (:background "midnight blue" :foreground "snow"))))
  '(company-preview-common ((t (:inherit company-preview :foreground "slate gray"))))
  '(company-preview-search ((t (:inherit company-preview :background "midnight blue"))))
