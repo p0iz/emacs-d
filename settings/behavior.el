@@ -1,10 +1,5 @@
 ;; Settings that affect behavior
 
-;; Neotree
-(require 'neotree)
-(setq neo-show-hidden-files t)
-(setq neo-window-fixed-size nil)
-
 ;; Ivy
 (require 'ivy-hydra)
 (setq ivy-use-virtual-buffers t)

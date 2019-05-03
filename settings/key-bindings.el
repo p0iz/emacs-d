@@ -10,9 +10,6 @@
 ;; Window switching
 (global-set-key (kbd "<C-tab>") 'other-window)
 
-;; Neotree
-(global-set-key (kbd "C-c t") 'neotree-toggle)
-
 ;; Frames
 (global-set-key (kbd "C-c f o") 'other-frame)
 (global-set-key (kbd "C-c f c") 'delete-frame)

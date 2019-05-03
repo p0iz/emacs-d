@@ -49,7 +49,6 @@
      color-identifiers-mode
      modern-cpp-font-lock
      counsel-projectile
-     neotree
      base16-theme
      rjsx-mode
      projectile
