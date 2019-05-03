@@ -20,6 +20,8 @@
 (savehist-mode t)
 (setq desktop-load-locked-desktop nil)
 (add-hook 'desktop-not-loaded-hook 'desktop-save-mode-off)
+
+;; Pixel scroll mode
 (pixel-scroll-mode t)
 
 ;; Set indent styles
