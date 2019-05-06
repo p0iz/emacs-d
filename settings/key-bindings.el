@@ -1,8 +1,10 @@
 ;; Key bindings
 
 ;; Ivy
+(global-set-key (kbd "M-x") 'counsel-M-x)
 (global-set-key (kbd "C-x C-b") 'counsel-ibuffer)
 (global-set-key (kbd "C-s") 'swiper)
+(global-set-key (kbd "C-c C-r") 'counsel-rg)
 
 ;; Enable ibuffer buffer list
 (global-set-key (kbd "C-x B") 'ibuffer-list-buffers)
@@ -25,8 +27,5 @@
 ;; Multiple-cursors
 (global-set-key (kbd "C->") 'mc/mark-next-like-this)
 (global-set-key (kbd "C-<") 'mc/mark-previous-like-this)
-
-;; Ripgrep
-(global-set-key (kbd "C-c C-r") 'counsel-rg)
 
 (provide 'key-bindings)
