@@ -10,7 +10,7 @@
     (menu-bar-mode -1)
 
     ;; Add line numbers
-    (global-linum-mode t)
+    (global-display-line-numbers-mode t)
 
     ;; No bells or whistles
     (setq visible-bell nil

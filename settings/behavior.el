@@ -8,10 +8,8 @@
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Enable some global modes
-(global-color-identifiers-mode t)
 (modern-c++-font-lock-global-mode t)
 (ivy-mode t)
-(golden-ratio-mode t)
 (savehist-mode t)
 (setq desktop-load-locked-desktop nil)
 (add-hook 'desktop-not-loaded-hook 'desktop-save-mode-off)
@@ -41,15 +39,6 @@
  'company
  '(add-to-list 'company-backends 'company-omnisharp))
 (add-hook 'csharp-mode-hook #'company-mode)
-
-;; Ensure that Omnisharp server process is assassinated
-(defadvice save-buffers-kill-emacs (before omnisharp-auto-stop)
-  (when (get-process "OmniServer")
-    (set-process-query-on-exit-flag (get-process "OmniServer") nil)))
-(ad-activate 'save-buffers-kill-emacs)
-
-;; Zeal docset mappings
-(require 'zeal-at-point)
-(add-to-list 'zeal-at-point-mode-alist '(csharp-mode . ("mono" "net" "unity3d")))
+(setq omnisharp-server-executable-path "/usr/local/bin/omnisharp")
 
 (provide 'behavior)

@@ -18,16 +18,10 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
- '(ansi-color-names-vector
-   ["#272822" "#f92672" "#a6e22e" "#f4bf75" "#66d9ef" "#ae81ff" "#66d9ef" "#f8f8f2"])
- '(ansi-term-color-vector
-   [unspecified "#272822" "#f92672" "#a6e22e" "#f4bf75" "#66d9ef" "#ae81ff" "#66d9ef" "#f8f8f2"] t)
  '(auto-save-default nil)
  '(custom-safe-themes
    (quote
-    ("43b219a31db8fddfdc8fdbfdbd97e3d64c09c1c9fdd5dff83f3ffc2ddb8f0ba0" "d5b121d69e48e0f2a84c8e4580f0ba230423391a78fcb4001ccb35d02494d79e" default)))
+    ("43b219a31db8fddfdc8fdbfdbd97e3d64c09c1c9fdd5dff83f3ffc2ddb8f0ba0" default)))
  '(global-auto-revert-mode t)
  '(inferior-octave-program "octave-cli")
  '(inhibit-startup-screen t)
@@ -39,15 +33,12 @@
  '(package-selected-packages
    (quote
     (ivy-explorer
-     zeal-at-point
      omnisharp
      company-lua
      company-quickhelp
      company
      ivy-hydra
-     golden-ratio
      blackboard-theme
-     color-identifiers-mode
      modern-cpp-font-lock
      counsel-projectile
      base16-theme
@@ -58,9 +49,7 @@
      multiple-cursors
      csharp-mode
      magit)))
- '(projectile-tags-command "ctags --fields=+r -Re -f \"%s\" %s")
- '(projectile-use-git-grep t)
- '(safe-local-variable-values (quote ((projectile-indexing-method quote alien)))))
+ '(projectile-use-git-grep t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -75,11 +64,6 @@
  '(company-tooltip ((t (:background "midnight blue" :foreground "snow"))))
  '(company-tooltip-common ((t (:foreground "gray"))))
  '(company-tooltip-selection ((t (:background "light slate blue")))))
-
-;; Install selected oackages on new installations
-(unless package-archive-contents
-  (progn (package-refresh-contents)
-	 (package-install-selected-packages)))
 
 ;; Separate settings into modules
 (setq settings-dir
