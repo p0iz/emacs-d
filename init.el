@@ -46,6 +46,7 @@
      projectile
      counsel
      try
+     typescript-mode
      multiple-cursors
      csharp-mode
      magit)))
