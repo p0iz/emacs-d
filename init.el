@@ -3,6 +3,10 @@
 ;; This file contains only customize, server startup and package setup code.
 ;; Anything else is split into separate files contained in 'settings' dir.
 
+;; Garbage collection tricks
+(setq gc-cons-threshold 1000000000)
+(add-hook 'focus-out-hook 'garbage-collect)
+
 (package-initialize)
 
 ;; Load server if not running
