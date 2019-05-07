@@ -18,7 +18,7 @@
 
     ;; In graphical mode load theme, disable bars and remember window size and open files
     (when (window-system frame)
-      (load-theme 'blackboard)
+      (load-theme 'base16-summerfruit-light)
       (scroll-bar-mode -1)
       (tool-bar-mode -1)
       (desktop-save-mode)
