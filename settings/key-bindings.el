@@ -1,6 +1,7 @@
 ;; Key bindings
 
 ;; Ivy
+(global-set-key (kbd "C-x b") 'counsel-ibuffer)
 (global-set-key (kbd "C-x C-b") 'counsel-ibuffer)
 (global-set-key (kbd "C-s") 'swiper)
 (global-set-key (kbd "C-c C-r") 'counsel-rg)
