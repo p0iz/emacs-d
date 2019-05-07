@@ -14,9 +14,6 @@
 (setq desktop-load-locked-desktop nil)
 (add-hook 'desktop-not-loaded-hook 'desktop-save-mode-off)
 
-;; Pixel scroll mode
-(pixel-scroll-mode t)
-
 ;; Set indent styles
 (setq c-default-style
       (quote
@@ -39,6 +36,5 @@
  'company
  '(add-to-list 'company-backends 'company-omnisharp))
 (add-hook 'csharp-mode-hook #'company-mode)
-(setq omnisharp-server-executable-path "/usr/local/bin/omnisharp")
 
 (provide 'behavior)
