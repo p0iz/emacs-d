@@ -24,6 +24,10 @@
 	(awk-mode . "awk")
 	(other . "k&r"))))
 
+;; Copy shell paths on Mac
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
 ;; Company
 (add-hook 'after-init-hook 'global-company-mode)
 (setq company-idle-delay 0

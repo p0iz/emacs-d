@@ -29,7 +29,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (cargo flycheck-rust racer rust-mode omnisharp company-lua company-quickhelp company ivy-hydra blackboard-theme modern-cpp-font-lock counsel-projectile base16-theme rjsx-mode projectile counsel try typescript-mode multiple-cursors csharp-mode magit)))
+    (exec-path-from-shell cargo flycheck-rust racer rust-mode omnisharp company-lua company-quickhelp company ivy-hydra blackboard-theme modern-cpp-font-lock counsel-projectile base16-theme rjsx-mode projectile counsel try typescript-mode multiple-cursors csharp-mode magit)))
  '(projectile-use-git-grep t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
