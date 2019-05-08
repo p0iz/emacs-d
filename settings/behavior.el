@@ -3,6 +3,10 @@
 ;; Allow y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
+;; Mac modifier handling
+(setq mac-option-modifier nil
+      mac-command-modifier 'meta)
+
 ;; Enable some global modes
 (modern-c++-font-lock-global-mode t)
 (savehist-mode t)
