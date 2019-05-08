@@ -11,7 +11,7 @@
 (global-set-key (kbd "C-c C-r") 'counsel-rg)
 
 ;; Enable ibuffer buffer list
-(global-set-key (kbd "C-x B") 'ibuffer-list-buffers)
+(global-set-key (kbd "C-x B") 'ibuffer)
 
 ;; Window switching
 (global-set-key (kbd "<C-tab>") 'other-window)
