@@ -1,6 +1,6 @@
 ;; Emacs configuration
 ;;
-;; This file contains only customize, server startup and package setup code.
+;; This file contains only GC tricks and customize.
 ;; Anything else is split into separate files contained in 'settings' dir.
 
 ;; Garbage collection tricks
@@ -29,24 +29,7 @@
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(package-selected-packages
    (quote
-    (ivy-explorer
-     omnisharp
-     company-lua
-     company-quickhelp
-     company
-     ivy-hydra
-     blackboard-theme
-     modern-cpp-font-lock
-     counsel-projectile
-     base16-theme
-     rjsx-mode
-     projectile
-     counsel
-     try
-     typescript-mode
-     multiple-cursors
-     csharp-mode
-     magit)))
+    (cargo flycheck-rust racer rust-mode ivy-explorer omnisharp company-lua company-quickhelp company ivy-hydra blackboard-theme modern-cpp-font-lock counsel-projectile base16-theme rjsx-mode projectile counsel try typescript-mode multiple-cursors csharp-mode magit)))
  '(projectile-use-git-grep t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
