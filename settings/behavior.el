@@ -1,16 +1,10 @@
 ;; Settings that affect behavior
 
-;; Ivy
-(require 'ivy-hydra)
-(setq ivy-use-virtual-buffers t)
-(setq ivy-extra-directories nil)
-
 ;; Allow y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
 
 ;; Enable some global modes
 (modern-c++-font-lock-global-mode t)
-(ivy-mode t)
 (savehist-mode t)
 (setq desktop-load-locked-desktop nil)
 (add-hook 'desktop-not-loaded-hook 'desktop-save-mode-off)
@@ -34,6 +28,12 @@
       company-show-numbers t
       company-tooltip-idle-delay 0
       company-quickhelp-delay 0)
+
+;; Ivy
+(require 'ivy-hydra)
+(setq ivy-use-virtual-buffers t)
+(setq ivy-extra-directories nil)
+(ivy-mode t)
 
 ;; Omnisharp
 (add-hook 'csharp-mode-hook 'omnisharp-mode)
