@@ -1,5 +1,9 @@
 ;; Key bindings
 
+;; Ido dired
+(global-set-key (kbd "C-x f") 'ido-find-file)
+(global-set-key (kbd "C-x C-f") 'ido-find-file)
+
 ;; Ivy
 (global-set-key (kbd "C-x b") 'counsel-ibuffer)
 (global-set-key (kbd "C-x C-b") 'counsel-ibuffer)

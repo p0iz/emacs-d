@@ -4,7 +4,6 @@
 (require 'ivy-hydra)
 (setq ivy-use-virtual-buffers t)
 (setq ivy-extra-directories nil)
-(ivy-explorer-mode)
 
 ;; Allow y/n answers
 (fset 'yes-or-no-p 'y-or-n-p)
